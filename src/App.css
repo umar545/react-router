@@ -17,9 +17,27 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
-nav ul li {
+.nav-link {
+  color: rgb(243, 245, 247);
+
   text-transform: capitalize;
   padding: 15px;
   cursor: pointer;
   font-size: 22px;
+  text-decoration: none;
+}
+.nav-link.active {
+  color: aqua;
+  text-decoration: line-through;
+}
+.blog {
+  border: 1px solid;
+  padding: 30px;
+}
+.blogs-container {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
 }

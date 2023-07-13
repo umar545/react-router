@@ -1,10 +1,10 @@
 import React from "react";
 
-function Home() {
+function About() {
   return (
-    <div className="home container">
-      <h1 className="home-heading">intro to react router dom v6</h1>
-      <h3>What is react router</h3>
+    <div className="about container">
+      <h1 className="home-heading">Abouts us </h1>
+      <h3>we are going to launch another app</h3>
       <p>React Router is library used for navigation in React</p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in
@@ -16,4 +16,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;
