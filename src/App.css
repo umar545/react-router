@@ -31,6 +31,7 @@ nav ul {
   text-decoration: line-through;
 }
 .blog {
+  margin: 40px auto;
   border: 1px solid;
   padding: 30px;
 }

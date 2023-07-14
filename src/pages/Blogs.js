@@ -1,12 +1,16 @@
-import React from "react";
-import Blog from "../components/Blog";
+import React, { useEffect, useState } from "react";
+// import Blog from "../components/Blog";
+import { Link, useOutletContext } from "react-router-dom";
 
 function Blogs() {
-  const blogs = [1, 2, 3, 4, 5, 6, 7, 8];
+    const blogs = useOutletContext();
+    console.log(blogs)
   return (
     <div className="blogs-container container">
       {blogs.map((blog) => (
-        <Blog key={blog} />
+        <Link to={`/blogs/${blog.id}`} >
+          <h1>blog title {blog.id}</h1>
+        </Link>
       ))}
     </div>
   );
